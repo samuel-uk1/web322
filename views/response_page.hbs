@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      
+        
+        <form method="post" action="/">
+
+			<h1>The nine titans</h1>
+          
+			<div class="clsSelection">
+              {{#each image_data.images_names}}
+                
+                <input type="radio" name="rdoImage" id="{{this}}" value="{{this}} "> 
+                <label for="{{this}} ">{{this}} </label ><br>
+                
+                
+               {{/each}}
+        
+   		       <br /><br />
+			   <button type="submit" value="submit">Submit</button>
+
+			</div>
+
+		</form>
+
+			<div class="clsContent">
+				<img src="{{ image_data.curr_image }}" alt="NO IMAGE" />
+			</div>
+
+			<div class="clsImageName">
+				Gallery
+			</div>
+        
+    </body>
+</html>
