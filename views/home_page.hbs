@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {{projects.name}} has the following skills : <br>
+        {{#each projects.skills}}
+                    		<input type="radio" name="rdoImage" id="rdoImageBathroomStuff" value="{{this}} ">
+                                        <label for="rdoImageBathroomStuff">{{this}} </label><br>
+        {{/each}}
+        
+        <form method="post" action="/">
+
+			<h1>Emily Blincoe</h1>
+
+			<div class="clsSelection">
+        		 {{#each image_data.images_names}}
+                
+               <input type="radio" name="rdoImage" id="{{this}} " value="{{this}} "> 
+               <label for="{{this}} ">{{this}} </label><br>
+                
+                
+               {{/each}}
+				<button type="submit" value="submit">Submit</button>
+			</div>
+
+		</form>
+
+			<div class="clsContent">
+				<img src={{ image_data.curr_image }}  alt="NO IMAGE" />
+			</div>
+
+			<div class="clsImageName">
+				Gallery
+			</div>
+        
+    </body>
+</html>
