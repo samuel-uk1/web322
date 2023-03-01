@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <body>
-       
+
+<head>
+		<meta charset="UTF-8" />
+		<title>WEB322 Assignment Gallery</title>
+		<link rel="stylesheet" href="/css/gallery.css" />
+	</head>
         
         <form method="post" action="/">
 
-			<h1>The nine titans</h1>
+			<h1>The nine titans / 九つの巨人  </h1>
 
 			<div class="clsSelection">
         		 {{#each image_data.images_names}}
@@ -24,9 +28,7 @@
 				<img src={{ image_data.curr_image }}  alt="NO IMAGE" />
 			</div>
 
-			<div class="clsImageName">
-				Gallery
-			</div>
+			
         
     </body>
 </html>

@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html>
+
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>WEB322 Assignment Gallery</title>
+		        <style>
+                
+                body{
+                   text-align:center;
+                   
+
+                }
+                
+                .clsSelection {  text-align: left; 
+                           
+                }
+                
+                .clsContent {  margin-bottom: 10%;
+                           
+                }
+
+                
+                h1 {
+    text-align:center;
+}
+
+		img {
+   max-width: 50%;            /* adjust to fit screen size */
+    max-height:50%; 
+              height: auto;
+              width:auto;
+  
+  
+                display: block;
+                margin-left: auto;         /* center image */
+                margin-right: auto;
+                
+                
+                
+                  
+}
+</style>
+	</head>
     <body>
       
         
         <form method="post" action="/">
 
-			<h1>The nine titans</h1>
+			<h1>The nine titans / 九つの巨人  </h1>
           
 			<div class="clsSelection">
               {{#each image_data.images_names}}
@@ -22,14 +65,13 @@
 			</div>
 
 		</form>
+      
 
 			<div class="clsContent">
 				<img src="{{ image_data.curr_image }}" alt="NO IMAGE" />
 			</div>
 
-			<div class="clsImageName">
-				Gallery
-			</div>
+			
         
     </body>
 </html>
